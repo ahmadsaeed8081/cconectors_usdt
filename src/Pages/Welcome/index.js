@@ -133,7 +133,7 @@ const Welcome = (props) => {
           }
           const total_inv = await contract.methods.total_investors().call();
 
-          let reg_fee = 6;
+          let reg_fee = 10;
           let val=Number(total_inv)+1
           const newId = "cntr89"+val;
            
@@ -152,7 +152,7 @@ const Welcome = (props) => {
               return;
             }
 
-            reg_fee = reg_fee * 10 ** 18;
+            reg_fee = reg_fee * 10 ** 6;
             console.log(typeof reg_fee + "   " + reg_fee);
             console.log("this is ref1 " + _ref);
 
@@ -284,7 +284,7 @@ const Welcome = (props) => {
           }
           const total_inv = await contract.methods.total_investors().call();
 
-          let reg_fee = 20;
+          let reg_fee = 10;
           let val=Number(total_inv)+1;
           const newId = "cntr89"+val;
            
@@ -303,7 +303,7 @@ const Welcome = (props) => {
               return;
             }
 
-            reg_fee = reg_fee * 10 ** 18;
+            reg_fee = reg_fee * 10 ** 6;
             console.log(typeof reg_fee + "   " + reg_fee);
             console.log("this is ref1 " + _ref);
 
